@@ -1,0 +1,40 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: $color-white;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+
+  & > * {
+    transform: skewX(12deg);
+  }
+
+  &__shape {
+    //its only work if have defined dimensions
+    width: 15rem; //this!
+    height: 15rem; //this!
+
+    float: left; //to make text around need makes in float
+    -webkit-shape-outside: circle(50% at 50% 50%); //its make text around shape
+    shape-outside: circle(50% at 50% 50%); //its make text around shape
+
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+
+    transform: translateX(-3rem) skewX(12deg);
+  }
+
+  &__img {
+    background-size: cover;
+    height: 100%;
+    background-size: cover;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+  }
+}
