@@ -4,7 +4,7 @@
   "description": "landig page for natours",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w sass/main.scss css/style.css --output-style compressed"
+    "sass": "node-sass -w sass/main.scss css/style.css "
   },
   "author": "Ramin",
   "license": "ISC",
