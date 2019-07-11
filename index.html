@@ -32,7 +32,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section id="about" class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting tours for adventurous people
@@ -55,7 +55,7 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Adipisci, dicta. Labore reprehenderit .
             </p>
-            <a href="#" class="btn-text">
+            <a href="#about" class="btn-text">
               Learn more &rarr;
             </a>
           </div>
@@ -80,6 +80,7 @@
           </div>
         </div>
       </section>
+
       <section class="section-features">
         <div class="row">
           <div class="col-1-of-4">
@@ -136,7 +137,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section id="tours" class="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Most papular tours
@@ -259,11 +260,19 @@
           </div>
         </div>
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">Discover all tours</a>
+          <a href="#tours" class="btn btn--green">Discover all tours</a>
         </div>
       </section>
 
-      <section class="section-stories">
+      <section id="stories" class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            Your browser is not supported
+          </video>
+        </div>
+
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             We make people genuinely happy
@@ -323,7 +332,7 @@
           </div>
         </div>
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn-text">Read all stories &rarr;</a>
+          <a href="#stories" class="btn-text">Read all stories &rarr;</a>
         </div>
       </section>
     </main>
