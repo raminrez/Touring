@@ -11,7 +11,38 @@
     @include center-horizontal-vertical;
     width: 74%;
     background-color: $color-white;
-    height: 50rem;
     box-shadow: 0 2rem 4rem rgba($color: $color-black, $alpha: 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+  }
+
+  &__left {
+    width: 33.333%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__right {
+    width: 66.66666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    @include column-count(2);
+    @include column-gap(4rem);
+    @include column-rule(1px, solid, $color-gray-light-2);
+    -ms-hyphens: auto; //depending on lang set on <html> tag
+    @include hyphens; //depending on lang set on <html> tag
   }
 }
