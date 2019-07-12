@@ -1028,12 +1028,13 @@ body {
   top: 0;
   left: 0;
   z-index: 1500;
-  opacity: 0;
   width: 0;
+  visibility: hidden;
+  opacity: 0;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* line 48, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 49, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__list {
   width: 100%;
   list-style: none;
@@ -1044,12 +1045,12 @@ body {
   text-align: center;
 }
 
-/* line 55, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 56, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__item {
   margin: 1rem;
 }
 
-/* line 60, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 61, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
@@ -1063,37 +1064,38 @@ body {
   transition: all 0.4s;
 }
 
-/* line 81, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 82, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__link:link span, .navigation__link:visited span {
   display: inline-block;
   margin-right: 1.2rem;
 }
 
-/* line 87, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 88, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #55c57a;
   transform: translateX(1rem);
 }
 
-/* line 96, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(50);
 }
 
-/* line 100, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 101, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
+  visibility: visible;
   opacity: 1;
 }
 
-/* line 106, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 108, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem;
 }
 
-/* line 109, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 111, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
   height: 2px;
@@ -1101,7 +1103,7 @@ body {
   display: inline-block;
 }
 
-/* line 118, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 120, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon::before, .navigation__icon::after {
   content: "";
   position: absolute;
@@ -1109,38 +1111,38 @@ body {
   transition: all 0.2s;
 }
 
-/* line 126, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 128, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon::before {
   top: -0.8rem;
 }
 
-/* line 130, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 132, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon::after {
   top: 0.8rem;
 }
 
-/* line 135, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 137, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__button:hover .navigation__icon::before {
   top: -1rem;
 }
 
-/* line 139, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 141, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__button:hover .navigation__icon::after {
   top: 1rem;
 }
 
-/* line 144, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 146, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent;
 }
 
-/* line 148, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 150, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   transform: rotate(135deg);
   top: 0;
 }
 
-/* line 153, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 155, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   transform: rotate(-135deg);
   top: 0;
