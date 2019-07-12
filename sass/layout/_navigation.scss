@@ -135,7 +135,23 @@
   &__button:hover &__icon::before {
     top: -1rem;
   }
+
   &__button:hover &__icon::after {
     top: 1rem;
+  }
+
+  //make center despiser
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+  //Shape X mark
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
   }
 }
