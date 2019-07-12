@@ -724,6 +724,77 @@ body {
   opacity: 1;
 }
 
+/* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+.popup {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 4000;
+}
+
+/* line 10, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 74%;
+  background-color: #fff;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: table;
+  overflow: hidden;
+}
+
+/* line 20, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+.popup__left {
+  width: 33.333%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+.popup__right {
+  width: 66.66666%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+
+/* line 33, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+.popup__img {
+  display: block;
+  width: 100%;
+}
+
+/* line 38, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+.popup__text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 4rem;
+  -moz-column-gap: 4rem;
+  -ms-column-gap: 4rem;
+  -o-column-gap: 4rem;
+  column-gap: 4rem;
+  -webkit-column-rule: 1px solid #eee;
+  -moz-column-rule: 1px solid #eee;
+  -ms-column-rule: 1px solid #eee;
+  -o-column-rule: 1px solid #eee;
+  column-rule: 1px solid #eee;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
 /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
 .header {
   height: 95vh;
