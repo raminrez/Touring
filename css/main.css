@@ -1,3 +1,16 @@
+/*
+0 - 600PX Phone
+600 900PX Tablet Portrait
+900 1200 Tablet Landscape
+[1200 1800]PX  is where normal style applied
+1800 + PX Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
 *,
 *::after,
@@ -14,7 +27,28 @@ html {
   font-size: 62.5%;
 }
 
-/* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
+@media (max-width: 75em) {
+  /* line 9, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  /* line 9, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  /* line 9, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
+  html {
+    font-size: 75%;
+  }
+}
+
+/* line 28, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
