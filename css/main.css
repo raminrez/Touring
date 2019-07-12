@@ -4,16 +4,20 @@
 *::before {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-/* line 9, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
+/* line 10, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
+/* line 15, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
 body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -70,6 +74,10 @@ body {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 6rem;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -346,10 +354,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 /* line 20, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
@@ -534,6 +546,10 @@ body {
 
 /* line 32, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__img {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   backface-visibility: hidden;
   background-size: cover;
   height: 100%;
