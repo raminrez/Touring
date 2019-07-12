@@ -10,6 +10,11 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+1em = 16px 
 */
 /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
 *,
