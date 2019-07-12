@@ -9,8 +9,10 @@
 
   opacity: 0;
   visibility: hidden;
+  transition: all 0.3s;
 
   &__content {
+    position: relative;
     @include center-horizontal-vertical;
     width: 74%;
     background-color: $color-white;
@@ -18,6 +20,11 @@
     border-radius: 3px;
     display: table;
     overflow: hidden;
+
+    transform: translate(-50%, -50%) scale(0.25);
+    opacity: 0;
+
+    transition: all 0.5s 0.2s;
   }
 
   &__left {
@@ -47,5 +54,35 @@
     @include column-rule(1px, solid, $color-gray-light-2);
     -ms-hyphens: auto; //depending on lang set on <html> tag
     @include hyphens; //depending on lang set on <html> tag
+  }
+
+  //FUNCTIONALITY
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      line-height: 1;
+      position: absolute;
+      display: inline-block;
+      color: $color-gray-dark;
+      font-size: 3rem;
+      text-decoration: none;
+      top: 2.5rem;
+      right: 2.5rem;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &:target &__content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
 }
