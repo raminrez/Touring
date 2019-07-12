@@ -10,7 +10,7 @@ body {
   color: $color-white;
   text-transform: uppercase;
   margin-bottom: 6rem;
-  backface-visibility: hidden;
+  @include backface-visibility(hidden);
 
   &--main {
     display: block;

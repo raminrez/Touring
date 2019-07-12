@@ -30,7 +30,7 @@
   }
 
   &__img {
-    backface-visibility: hidden;
+    @include backface-visibility(hidden);
     background-size: cover;
     height: 100%;
     background-size: cover;
