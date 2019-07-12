@@ -25,6 +25,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
+    // @include animate(moveInRight 1s ease-out);
     animation: moveInRight 1s ease-out;
   }
 }
@@ -39,7 +40,8 @@ body {
     $color-primary-dark
   );
   display: inline-block;
-  -webkit-background-clip: text;
+  @include background-clip(text);
+  // -webkit-background-clip: text;
   color: transparent;
   transition: all 0.2s;
   letter-spacing: 2px;

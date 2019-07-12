@@ -5,18 +5,17 @@
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-  transition: transform 0.3s;
+  @include transition(transform 0.3s);
 
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
+    @include background-image(
+      linear-gradient(to right, $color-primary-light, $color-primary-dark)
     );
     display: inline-block;
-    -webkit-background-clip: text;
+    @include background-clip(text);
+
     color: transparent;
   }
 
