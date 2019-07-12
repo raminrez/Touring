@@ -58,6 +58,14 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 3rem;
+}
+
+@media (max-width: 56.25em) {
+  /* line 28, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_base.scss */
+  body {
+    padding: 0;
+  }
 }
 
 @keyframes moveInLeft {
@@ -105,10 +113,9 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
 }
 
-/* line 9, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+/* line 8, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -120,7 +127,7 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 15, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+/* line 17, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
 .heading-primary--main {
   display: block;
   font-size: 6rem;
@@ -129,7 +136,15 @@ body {
   animation: moveInLeft 1s ease-out;
 }
 
-/* line 23, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+@media (max-width: 37.5em) {
+  /* line 17, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+  .heading-primary--main {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+  }
+}
+
+/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -138,7 +153,15 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
-/* line 33, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+@media (max-width: 37.5em) {
+  /* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+  }
+}
+
+/* line 44, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -153,25 +176,39 @@ body {
   letter-spacing: 2px;
 }
 
-/* line 49, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+@media (max-width: 56.25em) {
+  /* line 44, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* line 44, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+  .heading-secondary {
+    font-size: 2.3rem;
+  }
+}
+
+/* line 67, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-/* line 55, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+/* line 73, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 61, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+/* line 79, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
 .paragraph {
   font-size: 1.6rem;
 }
 
-/* line 63, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
+/* line 81, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_typography.scss */
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
 }

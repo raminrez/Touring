@@ -11,12 +11,20 @@ body {
   margin-bottom: 6rem;
   @include backface-visibility(hidden);
 
+  @include respond(phone) {
+  }
+
   &--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -24,8 +32,12 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
-    // @include animate(moveInRight 1s ease-out);
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+      font-weight: 400;
+    }
   }
 }
 
@@ -40,10 +52,17 @@ body {
   );
   display: inline-block;
   @include background-clip(text);
-  // -webkit-background-clip: text;
   color: transparent;
   transition: all 0.2s;
   letter-spacing: 2px;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.3rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
