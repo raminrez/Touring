@@ -7,6 +7,9 @@
   background-color: rgba($color: $color-black, $alpha: 0.95);
   z-index: 4000;
 
+  opacity: 0;
+  visibility: hidden;
+
   &__content {
     @include center-horizontal-vertical;
     width: 74%;

@@ -733,9 +733,11 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.95);
   z-index: 4000;
+  opacity: 0;
+  visibility: hidden;
 }
 
-/* line 10, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 13, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__content {
   position: absolute;
   top: 50%;
@@ -749,14 +751,14 @@ body {
   overflow: hidden;
 }
 
-/* line 20, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 23, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__left {
   width: 33.333%;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 29, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__right {
   width: 66.66666%;
   display: table-cell;
@@ -764,13 +766,13 @@ body {
   padding: 3rem 5rem;
 }
 
-/* line 33, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 36, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__img {
   display: block;
   width: 100%;
 }
 
-/* line 38, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 41, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
