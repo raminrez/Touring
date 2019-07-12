@@ -1118,7 +1118,7 @@ body {
 
 /* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(50);
+  transform: scale(80);
 }
 
 /* line 101, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
