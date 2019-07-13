@@ -25,12 +25,21 @@
     opacity: 0;
 
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-port) {
+      width: 95%;
+      height: 95%;
+    }
   }
 
   &__left {
     width: 33.333%;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__right {
@@ -38,6 +47,11 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      padding: 2rem 3rem;
+    }
   }
 
   &__img {
@@ -52,8 +66,12 @@
     @include column-count(2);
     @include column-gap(4rem);
     @include column-rule(1px, solid, $color-gray-light-2);
-    -ms-hyphens: auto; //depending on lang set on <html> tag
     @include hyphens; //depending on lang set on <html> tag
+
+    @include respond(tab-port) {
+      @include column-count(1);
+      @include column-gap(0);
+    }
   }
 
   //FUNCTIONALITY

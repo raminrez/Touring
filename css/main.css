@@ -990,14 +990,29 @@ body {
   transition: all 0.5s 0.2s;
 }
 
-/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@media (max-width: 56.25em) {
+  /* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup__content {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+/* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__left {
   width: 33.333%;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 36, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@media (max-width: 56.25em) {
+  /* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup__left {
+    display: none;
+  }
+}
+
+/* line 45, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__right {
   width: 66.66666%;
   display: table-cell;
@@ -1005,13 +1020,21 @@ body {
   padding: 3rem 5rem;
 }
 
-/* line 43, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@media (max-width: 56.25em) {
+  /* line 45, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup__right {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+}
+
+/* line 57, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__img {
   display: block;
   width: 100%;
 }
 
-/* line 48, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 62, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
@@ -1030,19 +1053,34 @@ body {
   -ms-column-rule: 1px solid #eee;
   -o-column-rule: 1px solid #eee;
   column-rule: 1px solid #eee;
-  -ms-hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
 
-/* line 61, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@media (max-width: 56.25em) {
+  /* line 62, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup__text {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -ms-column-count: 1;
+    -o-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    -ms-column-gap: 0;
+    -o-column-gap: 0;
+    column-gap: 0;
+  }
+}
+
+/* line 79, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup:target {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 67, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 85, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__close:link, .popup__close:visited {
   line-height: 1;
   position: absolute;
@@ -1054,12 +1092,12 @@ body {
   right: 2.5rem;
 }
 
-/* line 79, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__close:hover {
   color: #55c57a;
 }
 
-/* line 84, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 102, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup:target .popup__content {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
