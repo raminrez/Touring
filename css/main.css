@@ -1555,13 +1555,41 @@ body {
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem;
 }
 
-/* line 79, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+@media (max-width: 75em) {
+  /* line 64, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .book {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 56.25em) {
+  /* line 64, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .book {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
+  }
+}
+
+/* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
 .book__form {
   width: 50%;
   padding: 6rem;
+}
+
+@media (max-width: 75em) {
+  /* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .book__form {
+    width: 65%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  /* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .book__form {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
