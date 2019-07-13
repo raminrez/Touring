@@ -5,6 +5,9 @@
   @include respond(tab-port) {
     max-width: 50rem;
   }
+  @include respond(phone) {
+    padding: 0 3rem;
+  }
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
