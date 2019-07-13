@@ -457,20 +457,17 @@
 
     <footer id="footer" class="footer">
       <div class="footer__logo-box">
-        <picture class="footer__logo">
-          <source
-            srcset="
-              /img/logo-green-small-1x.png 1x,
-              /img/logo-green-small-2x.png 2x
-            "
-            media="(max-width: 37.5em)"
-          />
-          <img
-            srcset="/img/logo-green-1x.png 1x, /img/logo-green-2x.png 2x"
-            alt="Full Logo"
-            class="footer__logo"
-          />
-        </picture>
+        <!-- <picture class="footer__logo"> -->
+        <img
+          srcset="
+            img/logo-green-small-1x.png  300w,
+            img/logo-green-small-2x.png 1000w
+          "
+          sizes="(max-width: 900px) 20vh ,(max-width: 600px) 30vh , 300px"
+          alt="Full Logo"
+          class="footer__logo"
+        />
+        <!-- </picture> -->
       </div>
       <div class="row">
         <div class="col-1-of-2">
