@@ -228,17 +228,31 @@ body {
   margin-bottom: 4rem !important;
 }
 
-/* line 13, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_utilities.scss */
+@media (max-width: 56.25em) {
+  /* line 9, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_utilities.scss */
+  .u-margin-bottom-medium {
+    margin-bottom: 3rem !important;
+  }
+}
+
+/* line 17, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_utilities.scss */
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 }
 
-/* line 17, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_utilities.scss */
+@media (max-width: 56.25em) {
+  /* line 17, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_utilities.scss */
+  .u-margin-bottom-big {
+    margin-bottom: 5rem !important;
+  }
+}
+
+/* line 25, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_utilities.scss */
 .u-margin-top-big {
   margin-top: 8rem !important;
 }
 
-/* line 20, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_utilities.scss */
+/* line 28, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/base/_utilities.scss */
 .u-margin-top-huge {
   margin-top: 10rem !important;
 }
@@ -359,25 +373,61 @@ body {
   outline-offset: 2rem;
 }
 
-/* line 12, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+@media (max-width: 56.25em) {
+  /* line 3, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+  .composition__photo {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* line 19, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
 .composition__photo--p1 {
   left: 0;
   top: -2rem;
 }
 
-/* line 17, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
-.composition__photo--p2 {
-  right: 0;
-  top: 2rem;
+@media (max-width: 56.25em) {
+  /* line 19, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+  .composition__photo--p1 {
+    top: 0;
+    transform: scale(1.2);
+  }
 }
 
-/* line 22, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+/* line 29, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+.composition__photo--p2 {
+  right: 0;
+  top: -1rem;
+}
+
+@media (max-width: 56.25em) {
+  /* line 29, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+  .composition__photo--p2 {
+    top: -2rem;
+    transform: scale(1.3);
+    z-index: 100;
+  }
+}
+
+/* line 40, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
 .composition__photo--p3 {
   left: 20%;
   top: 10rem;
 }
 
-/* line 27, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+@media (max-width: 56.25em) {
+  /* line 40, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+  .composition__photo--p3 {
+    left: 1rem;
+    top: 0;
+    transform: scale(1.1);
+  }
+}
+
+/* line 51, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
 .composition__photo:hover {
   outline: 1.5rem solid #55c57a;
   transform: scale(1.05) translateY(-0.5rem);
@@ -385,7 +435,7 @@ body {
   z-index: 20;
 }
 
-/* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
+/* line 59, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_composition.scss */
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
 }
@@ -404,7 +454,14 @@ body {
   transition: transform 0.3s;
 }
 
-/* line 10, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_feature-box.scss */
+@media (max-width: 56.25em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_feature-box.scss */
+  .feature-box {
+    padding: 2rem;
+  }
+}
+
+/* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_feature-box.scss */
 .feature-box__icon {
   font-size: 6rem;
   margin-bottom: 0.5rem;
@@ -420,7 +477,15 @@ body {
   color: transparent;
 }
 
-/* line 22, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_feature-box.scss */
+@media (max-width: 56.25em) {
+  /* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_feature-box.scss */
+  .feature-box__icon {
+    margin-bottom: 0;
+    font-size: 10rem;
+  }
+}
+
+/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_feature-box.scss */
 .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.03);
 }
@@ -600,6 +665,54 @@ body {
   font-weight: 100;
 }
 
+@media (max-width: 56.25em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  /* line 187, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
+  .card__side {
+    position: relative;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  /* line 193, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
+  .card__side--back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+  /* line 199, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+  /* line 204, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
+  .card__cta {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+  /* line 213, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
+  .card__details {
+    padding: 0 1rem;
+  }
+  /* line 217, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
+  .card__price-box {
+    margin-bottom: 3rem;
+  }
+  /* line 221, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_card.scss */
+  .card__price-value {
+    font-size: 4rem;
+  }
+}
+
 /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story {
   width: 75%;
@@ -613,12 +726,28 @@ body {
   transform: skewX(-12deg);
 }
 
-/* line 12, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+@media (max-width: 56.25em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+  .story {
+    transform: skewX(0);
+  }
+}
+
+/* line 22, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story > * {
   transform: skewX(12deg);
 }
 
-/* line 16, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+/* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__shape {
   position: relative;
   width: 15rem;
@@ -631,7 +760,14 @@ body {
   transform: translateX(-3rem) skewX(12deg);
 }
 
-/* line 32, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+@media (max-width: 37.5em) {
+  /* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+  .story__shape {
+    transform: translateX(-3rem) skewX(0);
+  }
+}
+
+/* line 46, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__img {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -644,12 +780,19 @@ body {
   transition: all 0.5s;
 }
 
-/* line 40, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+/* line 54, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__text {
   transform: skewX(12deg);
 }
 
-/* line 44, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+@media (max-width: 37.5em) {
+  /* line 54, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+  .story__text {
+    transform: skewX(0);
+  }
+}
+
+/* line 61, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__caption {
   position: absolute;
   top: 50%;
@@ -664,13 +807,13 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 58, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+/* line 75, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story:hover .story__caption {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
 
-/* line 63, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+/* line 80, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story:hover .story__img {
   transform: translateX(-4rem) scale(1);
   filter: blur(3px) brightness(80%);
@@ -714,29 +857,36 @@ body {
   display: block;
 }
 
-/* line 20, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+@media (max-width: 56.25em) {
+  /* line 8, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+  .form__input {
+    width: 100%;
+  }
+}
+
+/* line 24, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__input:focus {
   outline: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #55c57a;
 }
 
-/* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__input:focus:invalid {
   border-bottom: 3px solid #ff7730;
 }
 
-/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 34, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__input::-webkit-input-placeholder {
   color: #999;
 }
 
-/* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 39, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__radio-input {
   display: none;
 }
 
-/* line 39, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 43, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__label {
   font-size: 1.2rem;
   font-weight: 700;
@@ -746,20 +896,28 @@ body {
   transition: all 0.2s ease;
 }
 
-/* line 48, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 52, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
 }
 
-/* line 54, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 58, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__radio-group {
   width: 49%;
   display: inline-block;
 }
 
-/* line 59, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+@media (max-width: 56.25em) {
+  /* line 58, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+  .form__radio-group {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* line 68, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__radio-label {
   font-size: 1.6rem;
   cursor: pointer;
@@ -767,7 +925,7 @@ body {
   padding-left: 4rem;
 }
 
-/* line 66, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 75, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__radio-button {
   height: 3rem;
   width: 3rem;
@@ -779,7 +937,7 @@ body {
   top: -0.4rem;
 }
 
-/* line 76, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 85, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__radio-button::after {
   content: "";
   display: block;
@@ -795,7 +953,7 @@ body {
   transition: all 0.2s;
 }
 
-/* line 89, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
+/* line 98, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_form.scss */
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1;
 }
@@ -832,14 +990,29 @@ body {
   transition: all 0.5s 0.2s;
 }
 
-/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@media (max-width: 56.25em) {
+  /* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup__content {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+/* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__left {
   width: 33.333%;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 36, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@media (max-width: 56.25em) {
+  /* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup__left {
+    display: none;
+  }
+}
+
+/* line 45, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__right {
   width: 66.66666%;
   display: table-cell;
@@ -847,13 +1020,21 @@ body {
   padding: 3rem 5rem;
 }
 
-/* line 43, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@media (max-width: 56.25em) {
+  /* line 45, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup__right {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+}
+
+/* line 57, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__img {
   display: block;
   width: 100%;
 }
 
-/* line 48, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 62, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
@@ -872,19 +1053,34 @@ body {
   -ms-column-rule: 1px solid #eee;
   -o-column-rule: 1px solid #eee;
   column-rule: 1px solid #eee;
-  -ms-hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 }
 
-/* line 61, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@media (max-width: 56.25em) {
+  /* line 62, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup__text {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -ms-column-count: 1;
+    -o-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    -ms-column-gap: 0;
+    -o-column-gap: 0;
+    column-gap: 0;
+  }
+}
+
+/* line 79, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup:target {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 67, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 85, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__close:link, .popup__close:visited {
   line-height: 1;
   position: absolute;
@@ -896,12 +1092,12 @@ body {
   right: 2.5rem;
 }
 
-/* line 79, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__close:hover {
   color: #55c57a;
 }
 
-/* line 84, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 102, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup:target .popup__content {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
@@ -918,19 +1114,27 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-/* line 15, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
+@media (max-width: 37.5em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
+
+/* line 20, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
 .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-/* line 21, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
+/* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
 .header__logo {
   height: 3.5rem;
 }
 
-/* line 25, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
+/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -945,9 +1149,30 @@ body {
   margin: 0 auto;
 }
 
-/* line 5, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+@media (max-width: 56.25em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+  .row {
+    max-width: 50rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+  .row {
+    padding: 0 3rem;
+  }
+}
+
+/* line 12, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row:not(:last-child) {
   margin-bottom: 8rem;
+}
+
+@media (max-width: 56.25em) {
+  /* line 12, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
 }
 
 /* line 2, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/abstract/_mixins.scss */
@@ -957,42 +1182,57 @@ body {
   clear: both;
 }
 
-/* line 11, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+/* line 22, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row [class^="col-"] {
   float: left;
 }
 
-/* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+/* line 25, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
 }
 
-/* line 19, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+@media (max-width: 56.25em) {
+  /* line 25, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  /* line 22, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
+}
+
+/* line 38, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
 }
 
-/* line 23, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+/* line 42, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
 
-/* line 27, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+/* line 46, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row .col-2-of-3 {
   width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
 }
 
-/* line 33, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+/* line 52, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
 }
 
-/* line 37, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+/* line 56, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row .col-2-of-4 {
   width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
 }
 
-/* line 43, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
+/* line 62, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_grid.scss */
 .row .col-3-of-4 {
   width: calc( 3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem));
 }
@@ -1005,41 +1245,63 @@ body {
   color: #f7f7f7;
 }
 
-/* line 7, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+@media (max-width: 56.25em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+  .footer {
+    padding: 4rem 0;
+  }
+}
+
+/* line 11, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__logo-box {
   text-align: center;
   margin-bottom: 8rem;
 }
 
-/* line 12, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+@media (max-width: 56.25em) {
+  /* line 11, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+  .footer__logo-box {
+    margin-bottom: 5rem;
+  }
+}
+
+/* line 19, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__logo {
   width: 15rem;
   height: auto;
 }
 
-/* line 17, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+/* line 24, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__navigation {
   border-top: 1px solid #777;
   padding-top: 2rem;
   display: inline-block;
 }
 
-/* line 23, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+@media (max-width: 56.25em) {
+  /* line 24, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+  .footer__navigation {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__list {
   list-style: none;
 }
 
-/* line 27, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+/* line 39, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__items {
   display: inline-block;
 }
 
-/* line 29, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+/* line 41, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__items:not(:last-child) {
   margin-right: 1.5rem;
 }
 
-/* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+/* line 47, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__link:link, .footer__link:visited {
   color: #f7f7f7;
   background-color: #333;
@@ -1049,19 +1311,27 @@ body {
   transition: all 0.2s;
 }
 
-/* line 45, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+/* line 57, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__link:hover, .footer__link:active {
   color: #55c57a;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   transform: rotate(5deg) scale(1.3);
 }
 
-/* line 53, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+/* line 65, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
 .footer__copyright {
   border-top: 1px solid #777;
   padding-top: 2rem;
   width: 80%;
   float: right;
+}
+
+@media (max-width: 56.25em) {
+  /* line 65, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_footer.scss */
+  .footer__copyright {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* line 2, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
@@ -1084,7 +1354,23 @@ body {
   cursor: pointer;
 }
 
-/* line 20, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+@media (max-width: 56.25em) {
+  /* line 6, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+  .navigation__button {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* line 6, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
+/* line 29, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__background {
   height: 6rem;
   width: 6rem;
@@ -1097,7 +1383,23 @@ body {
   transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-/* line 36, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+@media (max-width: 56.25em) {
+  /* line 29, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* line 29, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+}
+
+/* line 54, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__nav {
   height: 100vh;
   position: fixed;
@@ -1110,7 +1412,7 @@ body {
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* line 49, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 67, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__list {
   width: 100%;
   list-style: none;
@@ -1121,12 +1423,12 @@ body {
   text-align: center;
 }
 
-/* line 56, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 74, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__item {
   margin: 1rem;
 }
 
-/* line 61, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 79, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
@@ -1140,38 +1442,38 @@ body {
   transition: all 0.4s;
 }
 
-/* line 82, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 100, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__link:link span, .navigation__link:visited span {
   display: inline-block;
   margin-right: 1.2rem;
 }
 
-/* line 88, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 106, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #55c57a;
   transform: translateX(1rem);
 }
 
-/* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 115, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80);
 }
 
-/* line 101, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 119, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
   visibility: visible;
   opacity: 1;
 }
 
-/* line 108, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 126, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem;
 }
 
-/* line 111, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 129, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
   height: 2px;
@@ -1179,7 +1481,7 @@ body {
   display: inline-block;
 }
 
-/* line 120, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 138, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon::before, .navigation__icon::after {
   content: "";
   position: absolute;
@@ -1187,38 +1489,38 @@ body {
   transition: all 0.2s;
 }
 
-/* line 128, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 146, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon::before {
   top: -0.8rem;
 }
 
-/* line 132, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 150, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__icon::after {
   top: 0.8rem;
 }
 
-/* line 137, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 155, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__button:hover .navigation__icon::before {
   top: -1rem;
 }
 
-/* line 141, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 159, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__button:hover .navigation__icon::after {
   top: 1rem;
 }
 
-/* line 146, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 164, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent;
 }
 
-/* line 150, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 168, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   transform: rotate(135deg);
   top: 0;
 }
 
-/* line 155, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
+/* line 173, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_navigation.scss */
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   transform: rotate(-135deg);
   top: 0;
@@ -1231,7 +1533,14 @@ body {
   margin-top: -20vh;
 }
 
-/* line 7, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+@media (max-width: 56.25em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .section-about {
+    padding: 20rem 0;
+  }
+}
+
+/* line 11, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
@@ -1240,44 +1549,100 @@ body {
   transform: skewY(-7deg);
 }
 
-/* line 19, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+/* line 23, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
 .section-features > * {
   transform: skewY(7deg);
 }
 
-/* line 24, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+@media (max-width: 56.25em) {
+  /* line 11, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .section-features {
+    padding: 10rem 0;
+  }
+}
+
+/* line 32, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -8rem;
 }
 
-/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+@media (max-width: 56.25em) {
+  /* line 32, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .section-tours {
+    padding: 15rem 0 10rem 0;
+  }
+}
+
+/* line 42, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
 .section-stories {
   position: relative;
   padding: 15rem 0;
 }
 
-/* line 36, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+@media (max-width: 56.25em) {
+  /* line 42, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .section-stories {
+    padding: 10rem 0;
+  }
+}
+
+/* line 51, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
-/* line 45, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+@media (max-width: 56.25em) {
+  /* line 51, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .section-book {
+    padding: 10rem 0;
+  }
+}
+
+/* line 64, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem;
 }
 
-/* line 60, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+@media (max-width: 75em) {
+  /* line 64, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .book {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 56.25em) {
+  /* line 64, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .book {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
+  }
+}
+
+/* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
 .book__form {
   width: 50%;
   padding: 6rem;
+}
+
+@media (max-width: 75em) {
+  /* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .book__form {
+    width: 65%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  /* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/pages/_home.scss */
+  .book__form {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
