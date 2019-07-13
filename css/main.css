@@ -726,12 +726,28 @@ body {
   transform: skewX(-12deg);
 }
 
-/* line 12, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+@media (max-width: 56.25em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+  .story {
+    transform: skewX(0);
+  }
+}
+
+/* line 22, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story > * {
   transform: skewX(12deg);
 }
 
-/* line 16, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+/* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__shape {
   position: relative;
   width: 15rem;
@@ -744,7 +760,14 @@ body {
   transform: translateX(-3rem) skewX(12deg);
 }
 
-/* line 32, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+@media (max-width: 37.5em) {
+  /* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+  .story__shape {
+    transform: translateX(-3rem) skewX(0);
+  }
+}
+
+/* line 46, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__img {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -757,12 +780,19 @@ body {
   transition: all 0.5s;
 }
 
-/* line 40, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+/* line 54, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__text {
   transform: skewX(12deg);
 }
 
-/* line 44, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+@media (max-width: 37.5em) {
+  /* line 54, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+  .story__text {
+    transform: skewX(0);
+  }
+}
+
+/* line 61, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story__caption {
   position: absolute;
   top: 50%;
@@ -777,13 +807,13 @@ body {
   backface-visibility: hidden;
 }
 
-/* line 58, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+/* line 75, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story:hover .story__caption {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
 
-/* line 63, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
+/* line 80, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_story.scss */
 .story:hover .story__img {
   transform: translateX(-4rem) scale(1);
   filter: blur(3px) brightness(80%);
