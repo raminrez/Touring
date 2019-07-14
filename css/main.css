@@ -965,14 +965,23 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 4000;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
 }
 
-/* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  .popup {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* line 21, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__content {
   position: relative;
   position: absolute;
@@ -991,14 +1000,14 @@ body {
 }
 
 @media (max-width: 56.25em) {
-  /* line 14, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  /* line 21, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
   .popup__content {
     width: 95%;
     height: 95%;
   }
 }
 
-/* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 42, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__left {
   width: 33.333%;
   display: table-cell;
@@ -1006,13 +1015,13 @@ body {
 }
 
 @media (max-width: 56.25em) {
-  /* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  /* line 42, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
   .popup__left {
     display: none;
   }
 }
 
-/* line 45, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 52, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__right {
   width: 66.66666%;
   display: table-cell;
@@ -1021,20 +1030,20 @@ body {
 }
 
 @media (max-width: 56.25em) {
-  /* line 45, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  /* line 52, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
   .popup__right {
     width: 100%;
     padding: 2rem 3rem;
   }
 }
 
-/* line 57, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 64, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__img {
   display: block;
   width: 100%;
 }
 
-/* line 62, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 69, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
@@ -1059,7 +1068,7 @@ body {
 }
 
 @media (max-width: 56.25em) {
-  /* line 62, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+  /* line 69, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
   .popup__text {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -1074,13 +1083,13 @@ body {
   }
 }
 
-/* line 79, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 86, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup:target {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 85, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 92, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__close:link, .popup__close:visited {
   line-height: 1;
   position: absolute;
@@ -1092,12 +1101,12 @@ body {
   right: 2.5rem;
 }
 
-/* line 97, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 104, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup__close:hover {
   color: #55c57a;
 }
 
-/* line 102, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
+/* line 109, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/components/_popup.scss */
 .popup:target .popup__content {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
@@ -1107,11 +1116,18 @@ body {
 .header {
   height: 95vh;
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  }
 }
 
 @media (max-width: 37.5em) {
@@ -1122,19 +1138,19 @@ body {
   }
 }
 
-/* line 20, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
+/* line 29, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
 .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-/* line 26, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
+/* line 35, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
 .header__logo {
   height: 3.5rem;
 }
 
-/* line 30, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
+/* line 39, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
 .header__text-box {
   position: absolute;
   top: 40%;
