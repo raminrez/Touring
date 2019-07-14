@@ -1126,7 +1126,7 @@ body {
 @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   /* line 1, ../../../../../Users/ramin/Documents/CSS/01_Natours_starter/sass/layout/_header.scss */
   .header {
-    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   }
 }
 
